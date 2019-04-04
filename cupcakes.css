@@ -1,0 +1,113 @@
+body { background-color: #FFFFFF; }
+	  
+		
+h1 	{ text-align: center;
+	  color: #000000; 
+	  font-family: Georgia, sans-serif;
+	  font-size: 55px;
+	  background-image: url(logo.jpg);
+	  background-position: bottom;
+	  background-repeat: no-repeat;
+	  height: 250px; 
+	  margin-bottom: 5px; }
+
+nav { font-family: Verdana, Arial, sans-serif;
+	  font-size: large;
+	  text-align: center;
+	  word-spacing: 3em;
+	  background-color: #000000
+	   }
+	 
+nav a { }
+
+nav ul{ }
+
+nav a:link { color: #FF9999; }
+
+nav a:visited { color: #FF6699;}
+
+nav a:hover { color: #FFFFFF; }
+	
+h2 { text-align: center;
+	 font-family: Georgia;}
+		
+h3 { text-align: left;
+	 font-family: Georgia;
+	 margin-left: 100px;}
+	
+main { margin-top: 10px;
+	   margin-bottom: 10px;
+	   border-style: double;
+	   border-width: 10px; 
+	   border-left: none;
+	   border-right: none;
+	   }
+	   
+p { margin-left: 100px;
+	font-family: Georgia;
+
+	}
+	
+footer { border-style: dotted;
+		 margin-top: 20px;
+		 margin-bottom: 10px;
+		 padding-top: 8px; 
+		 text-align: center;
+		 border-left: none;
+		 border-right: none; 
+		 border-bottom: none;}
+			
+header, nav, main, footer { display:block; }			
+		
+#homecupcake { background-image: url(bwcupcakes.jpg);
+			   margin-left: 10px; 
+			   background-repeat: repeat-x;
+			   margin-right: 10px;}	
+			   
+table {margin: auto;
+	   border: 3px solid #FF6699;
+	   border-spacing: 0;
+	   width: 800px; }
+	   
+td, th { border-style: none;
+		 padding: 0.5em;
+		 font-family: Arial, sans-seirf; }
+
+caption { font-family: Verdana, sans-serif;
+		  font-weight: bold;
+		  font-size: 1.2em;
+		  padding-bottom: 0.5em; }
+.altrow { background-color: #eaeaea;
+		  text-align: center; }
+		  
+form { margin-left: 100px; font-size: 22px; }
+label { float: left; display: block;}
+select, option {font-size: 24px;}
+input, textarea { margin-top: 10px; font-size: 20px; } 
+#mySubmit { margin-left: 100px; width: 100px; }
+
+@media only screen and (max-width: 1024px) {
+	body { margin:0; padding: 0; }
+	#homecupcake { width: auto; min-width: 0; margin: 0; box-shadow: none; }
+	h1 { margin: 0; }
+	nav { float: none; width: auto; padding: 0.5em; }
+	nav a {padding: 1em; }
+	main { padding: 1em; margin-left: 0; font-size: 90%; }
+	footer { margin: 0; }
+	
+}
+
+@media only all and (max-width: 768px) {
+	h1 { height: 100%; font-size: 1.5em; padding-left: 0.3em; background-image: none;}
+	nav { padding: 0;}
+	nav a { display: block; padding: 0.2em; font-size: 1.3em; border-bottom: 1px; border-color: #330000; }
+	nav ul { margin: 0; padding: 0; }
+	main { padding-top: 0.1em; padding-right: 0.6em; padding-bottom: 0.1em; padding-left: 0.4em; }
+	#homecupcake { display: none; }
+	footer { padding: 0; }
+	
+
+}
+
+			   
+			

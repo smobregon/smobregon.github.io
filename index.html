@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Savannah Obregon - Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+  <script type="text/javascript" src="rollover.js"></script>
+  
+  
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    ul {
+      list-style-type: none;
+    }
+
+    div {
+      vertical-align: center;
+      text-align: center;
+      align-content: center;
+    }
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index.html">Home</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <!-- <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li> -->
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron">
+  <div class="container text-center">
+    <h1>Savannah Obregon</h1> 
+    <p>Welcome!</p>     
+    <ul id="image_list">
+            <li><a href="images/profile.jpg" title="Savannah Picture"></a></li>
+            <li><a href="images/profile2.jpg" title="Savannah Picture"></a></li>
+            <li><a href="images/computer.jpg" title="Savannah Picture"></a></li>
+            <li><a href="images/alert.jpg" title="Savannah Picture"></a></li>
+            <li><a href="images/cupcake.jpg" title="Savannah Picture"></a></li>
+        </ul>
+      <img src = "images/profile2.jpg" class = "img-responsive" style = "width: 50% height: 50%"; alt="Image">
+  </div>
+</div>
+  
+<div class="container-fluid bg-3 text-center">    
+  <h3>Please navigate this website to learn a little more about me!</h3><br>
+  <div class="row">
+    <div class="col-sm-3">
+      <!-- <ul id="image_list">
+            <li><a href="images/profile.jpg" title="Savannah Picture"></a></li>
+            <li><a href="images/profile2.jpg" title="Savannah Picture"></a></li>
+        </ul> -->
+      
+    <!-- <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"> -->
+     </div>
+
+    <div class="col-sm-3">
+      <h2><a href="projects.html">View my Projects</a></h2>
+      <!-- <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"> -->
+      <img id= "image2" src = "images/alert.jpg" class = "img-responsive" style="width: 100%" alt="Image">
+      </div>
+
+      <div class="col-sm-3">
+      <h2><a href="profile.html">View my Profile</a></h2>
+      <!-- <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"> -->
+      <img id = "image1" src = "images/computer.jpg" class = "img-responsive" style = "width: 100%" alt="Image">
+      </div>
+
+      <div class="col-sm-3">
+      <!-- <h2><a href="contact.html">Contact Me</a></h2> -->
+      <!-- <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"> -->
+      </div>
+  </div>
+</div><br>
+
+<div class="container-fluid bg-3 text-center">    
+  <div class="row">
+    <div class="col-sm-3">
+      <!-- <p></p>
+      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"> -->
+    </div>
+    <div class="col-sm-3"> 
+      
+      <!-- <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"> -->
+    </div>
+    <div class="col-sm-3"> 
+      
+      <!-- <p>Some text..</p>
+      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"> -->
+    </div>
+    <!-- <div class="col-sm-3">
+      <p>Some text..</p>
+      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+    </div> -->
+  </div>
+</div><br><br>
+
+<footer class="container-fluid text-center">
+  <p>smobregon@mail.lipscomb.edu</p>
+  <p>615-918-2912</p>
+  <p id="date">
+          <script type="text/javascript"> 
+            var now = new Date();
+            document.getElementById("date").innerHTML = now;
+          </script>
+        </p> 
+</footer>
+
+</body>
+</html>
