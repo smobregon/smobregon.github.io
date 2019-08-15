@@ -59,7 +59,7 @@ footer { border-style: dotted;
 			
 header, nav, main, footer { display:block; }			
 		
-#homecupcake { background-image: url(bwcupcakes.jpg);
+#homecupcake { background-image: url(cupcake_images/bwcupcakes.jpg);
 			   margin-left: 10px; 
 			   background-repeat: repeat-x;
 			   margin-right: 10px;}	
