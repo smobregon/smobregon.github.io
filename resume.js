@@ -12,5 +12,5 @@ $(document).ready(function(evt) {
 		evt.preventDefault(); //cancel default action
 	}); //end click
 });
-	// $("#resume").find("a:first").focus(); //focus on first <a> tag
+	//$("#resume").find("a:first").focus(); //focus on first <a> tag
 
