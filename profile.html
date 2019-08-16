@@ -7,8 +7,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
- <!--  <script src="http://malsup.github.com/jquery.cycle2.js"></script> -->
- <script type="text/javascript" src="slideshow.js"></script>
+  <script type="text/javascript" src="slideshow.js"></script>
   <style>
     /* Remove the navbar's default margin-bottom and rounded borders */ 
     .navbar {
@@ -40,8 +39,9 @@
       text-align: center;
       margin-left: auto;
       margin-right: auto;
+      text-align: center;
     }
-    main {
+    .slideshow {
       width: 400px;
       margin-left: auto;
       margin-right: auto;
@@ -54,70 +54,51 @@
     }
   </style>
 </head>
-<body>
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="index.html">Home</a>
+  <body>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Home</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li class="active"><a href="profile.html">Profile</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="jumbotron">
+      <div class="container text-center">
+        <h1>Profile</h1> 
+        <p>My name is Savannah Obregon and I am from The Bahamas. I am a graduate of Lipscomb University with a Bachelors of Science in IT Management and minor in Business. My short term goal is to gain invaluable experience and start my career. My long term plan is to make a bigger contribution to my country and the world.</p>
+      </div>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li><a href="resume.html">Resume</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li class="active"><a href="profile.html">Profile</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-      </ul>
+    <div class="container text-center">
+      <em>Click <a href="https://www.linkedin.com/in/savannah-maria-obregon/" target="_blank">here</a> to view my <b>LinkedIn</b> profile.</em>
+      <h2>About Me</h2>
+      <p>I graduated from my high school, Queens College, and then went to continue my studies in the United States. I am currently a graduate of Lipscomb University with a degree in Information Technology Management and minor in Business. I worked as an International Student Recruiter for the Office of Admissions at Lipscomb. I was a member of the Intercultural Honor Society and an Honours College Ambassador. I play volleyball in my free time along with reading and traveling. I am looking to take on new opportunities and jobs! My short term goal is gain new experience and start my career. </p>
     </div>
-  </div>
-</nav>
-<div class="jumbotron">
-  <div class="container text-center">
-    <h1>Profile</h1> 
-    <p>My name is Savannah Obregon and I am from The Bahamas. I am a graduate of Lipscomb University with a Bachelors of Science in IT Management and minor in Business. My short term goal is to gain invaluable experience and start my career. My long term plan is to make a bigger contribution to my country and the world.</p>
-  </div>
-</div>
-<div class="container text-center">
-  <em>Click <a href="https://www.linkedin.com/in/savannah-maria-obregon/" target="_blank">here</a> to view my <b>LinkedIn</b> profile.</em>
-  <h2>About Me</h2>
-  <p>I graduated from my high school, Queens College, and then went to continue my studies in the United States. I am currently a graduate of Lipscomb University with a degree in Information Technology Management and minor in Business. I worked as an International Student Recruiter for the Office of Admissions at Lipscomb. I was a member of the Intercultural Honor Society and an Honours College Ambassador. I play volleyball in my free time along with reading and traveling. I am looking to take on new opportunities and jobs! My short term goal is gain new experience and start my career. </p>
-</div>
-
-<main>
-<!-- <div class = "flexbox-container"> -->
-  <ul id="image_list">
-    <li><a href="images/pic3.jpg" title="Office of Admissions Student Workers"></a></li>
-    <li><a href="images/pic4.jpg" title="Recruiting Trip - The Bahamas 2016"></a></li>
-    <li><a href="images/pic5.jpg" title="W.E.B. Du Bois Honor Society Initiation Ceremony"></a></li>
-    <li><a href="images/pic6.jpg" title="Presidential Ambassador Council Retreat with President and Mrs. Lowry"></a></li>
-  </ul>
-  <div class = "slides"><img src="images/pic3.jpg" alt="Office of Admissions Student Workers" id="image" class="slides"></div>
-  <p id="caption">Office of Admissions Student Workers</p>
-
-<!-- <div id="slides" class="cycle-slideshow"
-        data-cycle-fx="scrollHorz"
-        data-cycle-speed="5000"
-        data-cycle-timeout="2000"
-        data-cycle-caption="#adv-custom-caption"
-        data-cycle-caption-template="Slide {{slideNum}}: {{cycleTitle}}">
-            <img src="images/pic3.jpg" alt="" data-cycle-title="Office of Admissions - Student Workers">
-            <img src="images/pic4.jpg" alt="" data-cycle-title="Recruiting Trip - Bahamas 2016">
-            <img src="images/pic5.jpg" alt="" data-cycle-title="W.E.B. Du Bois Honor Society Initiation Ceremony">
-            <img src="images/pic6.jpg" alt="" data-cycle-title="Presidential Ambassador Council Retreat with President and Mrs. Lowry">
-            <div id="adv-custom-caption"></div>
-        </div> -->
-</main>
-<!-- </div> -->
-
-<footer class="container-fluid text-center">
-  <p>savannahobregon242@gmail.com</p>
-  <p>615-918-2912</p>
-</footer>
-</body>
+    <div class="slideshow">
+      <ul id="image_list">
+        <li><a href="images/pic3.jpg" title="Office of Admissions Student Workers"></a></li>
+        <li><a href="images/pic4.jpg" title="Recruiting Trip - The Bahamas 2016"></a></li>
+        <li><a href="images/pic5.jpg" title="W.E.B. Du Bois Honor Society Initiation Ceremony"></a></li>
+        <li><a href="images/pic6.jpg" title="Presidential Ambassador Council Retreat with President and Mrs. Lowry"></a></li>
+      </ul>
+      <div class = "slides"><img src="images/pic3.jpg" alt="Office of Admissions Student Workers" id="image" class="slides"></div>
+      <p id="caption"><em>Office of Admissions Student Workers</em></p>
+    </div>
+    <footer class="container-fluid text-center">
+      <p>savannahobregon242@gmail.com</p>
+      <p>615-918-2912</p>
+    </footer>
+  </body>
 </html>
