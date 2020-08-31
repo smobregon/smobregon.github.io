@@ -1,83 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<title>Anna Marie's Cupcakery</title>
-<meta charset="utf-8">
-<meta name = "viewport" content = "width=device-width, initial scale= 1.0">
-<meta name = "description" content = "Anna Marie's Cupcakery is a gourmet dessert business selling delicious, affordable cupckaes. We offer cupcake delivery and pickups in store. Cupcakes for a good cause!"> 
-<link rel="stylesheet" href="cupcakes.css">
-</head>
-<body>
-	<h1>Anna Marie's Cupcakery</h1>
-<h2> Cupcakes with a cause!</h2>
-<nav>
-	<ul>
-  	<a href="cupcakesindex.html">Home</a> <a href="about.html">About</a> <a href="gallery.html">Gallery</a> <a href="orders.html">Orders</a> <a href="contact1.html">Contact</a>
-	</ul>
-</nav>
+  <head>
+    <title>Orders</title>
+    <link rel="icon" href="cupcake_images/logo.png" type="image/icon type" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial scale= 1.0" />
+    <meta
+      name="description"
+      content="Anna Marie's Cupcakery is a gourmet dessert business selling delicious, affordable cupckaes. We offer cupcake delivery and pickups in store. Cupcakes for a good cause!"
+    />
+    <link rel="stylesheet" href="cupcakes.css" />
+  </head>
+  <body>
+    <h1>Anna Marie's Cupcakery</h1>
 
+    <nav>
+      <ul>
+        <li><a href="cupcakesindex.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="orders.html">Orders</a></li>
+        <li><a href="contact1.html">Contact</a></li>
+      </ul>
+    </nav>
 
-<div>
-<h2> Order Here!</h2>
-</div>
-<style>
+    <h2>Pricing</h2>
+    <table>
+      <tr>
+        <th>Vanilla</th>
+        <th>Chocolate</th>
+        <th>Strawberry</th>
+        <th>Pumpkin Spice</th>
+      </tr>
+      <tr class="altrow">
+        <td>$2.50</td>
+        <td>$2.50</td>
+        <td>$3.00</td>
+        <td>$3.50</td>
+      </tr>
+    </table>
 
-h3 { margin-left: 100px;}
- 
-li { margin-left: 135px;
-	 list-style-type: square; }
-table {width: 400px;}
-</style>
-<main>
-<p>Check out our cupcake prices befor filling out your order!</p>
+    <div class="orderform">
+      <h3>Order Form</h3>
+      <form method="post" action="http://webdevbasics.net/scripts/demo.php">
+        <label>Name</label>
+        <input type="text" id="fname" value="Name" /><br /><br />
 
-<table class = "table">
-<caption>Cupcake Prices</caption>
-	<tr>
-		<th>Vanilla</th>
-		<th>Chocolate</th>
-		<th>Strawberry</th>
-		<th>Pumpkin Spice</th>
-	</tr>
-	<tr class= "altrow">
-		<td>$2.50</td>
-		<td>$2.50</td>
-		<td>$3.00</td>
-		<td>$3.50</td>
-	</tr>
-</table>
+        <label>Choose your cupcake:</label>
+        <ul>
+          <li>
+            <input type="radio" id="vanilla" name="myCupcake" value="vanilla" />
+            <label for="vanilla">Vanilla</label>
+          </li>
+          <li>
+            <input type="radio" id="choco" name="myCupcake" value="choco" />
+            <label for="choco">Chocolate</label>
+          </li>
+          <li>
+            <input type="radio" id="sberry" name="myCupcake" value="sberry" />
+            <label for="sberry">Strawberry</label>
+          </li>
+          <li>
+            <input type="radio" id="pspice" name="myCupcake" value="pspice" />
+            <label for="pspice">Pumpkin Spice</label>
+          </li>
+        </ul>
 
-<h3> Place your order:</h3>
+        <label for="myAmount">Choose how many cupcakes:</label>
+        <input type="number" name="myAmount" min="1" max="24" /><br /><br />
 
-<form method="post" action="http://webdevbasics.net/scripts/demo.php">
-Choose your cupcake:<br>
-<input type="radio" name="myCupcake" id="vanilla" value="vanilla">Vanilla<br>
-<input type="radio" name="myCupcake" id="chocoalte" value="chocolate">Chocolate<br>
-<input type="radio" name="myCupcake" id="strawberry" value="strawberry">Strawberry<br>
-<input type="radio" name="myCupcake" id="pspice" value="pspice">Pumpkin Spice<br><br>
+        <label>Choose how you want it delivered:</label>
+        <select size="1" name="delivery" onChange="yesnoCheck(this);">
+          <option>Select your delivery type</option>
+          <option value="deliver" id="deliver">Deliver to address</option>
+          <option value="PickUp">Pick up cupcakes</option></select
+        ><br /><br />
 
-<label for="myAmount">Choose how many cupcakes:</label><br>
-<input type="number" name="myAmount" min="1" max="24"><br><br>
+        <div name="Address Form" id="addressform" class="addressform">
+          <input type="street" class="form-control" placeholder="Street" />
 
-Choose how you want it delivered:<br>
-<select size="1" name="delivery" id="delivery">
-<option>Select your delivery type</option>
-<option value="Ship">Ship to address</option>
-<option value="Deliver">Deliver to address(must be within 10 mile radius)</option>
-<option value="PickUp">Pick up cupcakes</option></select>
-<br><br>
-<input id="mySubmit" type="submit" value="Submit"> <input type="reset"><br>
+          <input
+            type="city"
+            class="form-control"
+            id="inputCity"
+            placeholder="City"
+          />
 
-</form>
-</main>
+          <input
+            type="state"
+            class="form-control"
+            id="inputState"
+            placeholder="State"
+          />
 
+          <input
+            type="zip"
+            class="form-control"
+            id="inputZip"
+            placeholder="Zip"
+          />
 
+          <input
+            type="country"
+            class="form-control"
+            id="inputCountry"
+            placeholder="Country"
+          />
+        </div>
 
-<footer>
-<a href="cupcakesindex.html">Home</a> &#9679; <a href="about.html">About</a> &#9679; <a href="gallery.html">Gallery</a> &#9679; <a href="orders.html">Orders</a> &#9679; <a href="contact1.html">Contact</a><br>
-<br>
-	Telephone: 242-555-5555 &nbsp;&#9679;&nbsp;
-	E-mail: <a href="mailto:savannahobregon@mail.lipscomb.edu">savannahobregon@mail.lipscomb.edu</a></small><br>	
-</footer>
-</body>
+        <input
+          id="mySubmit"
+          type="submit"
+          value="Submit"
+          onclick="showInput();"
+        />
+        <input type="reset" />
+      </form>
+    </div>
+  </body>
+
+  <script>
+    function yesnoCheck(that) {
+      if (that.value == "deliver") {
+        document.getElementById("addressform").style.display = "block";
+      } else {
+        document.getElementById("addressform").style.display = "none";
+      }
+    }
+  </script>
+
+  <footer>
+    Phone: 242-555-5678<br />
+    Email:
+    <a href="mailto:savannahobregon@mail.lipscomb.edu"
+      >savannahobregon@mail.lipscomb.edu</a
+    >
+  </footer>
 </html>
